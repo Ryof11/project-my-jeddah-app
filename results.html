@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Jeddah Day Plan</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container py-5">
+    <h2 class="text-center mb-4">Your Perfect Day in Jeddah</h2>
+    <div class="row" id="resultsContainer">
+      <!-- الكروت تظهر هنا ديناميكياً -->
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="preferences.html" class="btn btn-lg btn-custom">Change Preferences</a>
+    </div>
+  </div>
+
+  <!-- Modal لعرض تفاصيل المكان -->
+  <div class="modal fade" id="placeModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="placeTitle"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img id="placeImage" class="img-fluid mb-3" alt="">
+          <p id="placeDescription" class="mb-3"></p>
+          <p><strong>📍 Category:</strong> <span id="placeCategory"></span></p>
+          <p><strong>💰 Price Range:</strong> <span id="placePrice"></span></p>
+          <p><strong>🕒 Working Hours:</strong> <span id="placeHours"></span></p>
+          <p><strong>✨ Features:</strong> <span id="placeFeatures"></span></p>
+          <a id="placeLocation" href="#" target="_blank" class="btn btn-primary mt-2">Open in Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

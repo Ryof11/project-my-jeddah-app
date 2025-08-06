@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preferences - My Jeddah Day</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container py-5">
+    <h2 class="text-center mb-4">Choose Your Preferences</h2>
+
+    <!-- Mood -->
+    <div class="mb-4">
+      <h4>Select Your Mood (1 only)</h4>
+      <div class="row g-3">
+        <div class="col-md-3">
+          <div class="pref-card" data-type="mood" data-value="romantic">💖 Romantic</div>
+        </div>
+        <div class="col-md-3">
+          <div class="pref-card" data-type="mood" data-value="adventurous">⛰️ Adventurous</div>
+        </div>
+        <div class="col-md-3">
+          <div class="pref-card" data-type="mood" data-value="chill">😌 Chill</div>
+        </div>
+        <div class="col-md-3">
+          <div class="pref-card" data-type="mood" data-value="energetic">⚡ Energetic</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interest -->
+    <div class="mb-4">
+      <h4>Select Your Interests (up to 2)</h4>
+      <div class="row g-3">
+        <div class="col-md-3"><div class="pref-card" data-type="interest" data-value="shopping">🛍️ Shopping</div></div>
+        <div class="col-md-3"><div class="pref-card" data-type="interest" data-value="nature">🌿 Nature</div></div>
+        <div class="col-md-3"><div class="pref-card" data-type="interest" data-value="art">🎨 Art</div></div>
+        <div class="col-md-3"><div class="pref-card" data-type="interest" data-value="history">🏰 History</div></div>
+      </div>
+    </div>
+
+    <!-- Food -->
+    <div class="mb-4">
+      <h4>Select Your Favorite Food (1 only)</h4>
+      <div class="row g-3">
+        <div class="col-md-3"><div class="pref-card" data-type="food" data-value="seafood">🦞 Seafood</div></div>
+        <div class="col-md-3"><div class="pref-card" data-type="food" data-value="local">🍲 Local</div></div>
+        <div class="col-md-3"><div class="pref-card" data-type="food" data-value="international">🍝 International</div></div>
+        <div class="col-md-3"><div class="pref-card" data-type="food" data-value="cafe">☕ Café</div></div>
+      </div>
+    </div>
+
+    <!-- Budget -->
+    <div class="mb-4">
+      <h4>Select Your Budget (1 only)</h4>
+      <div class="row g-3">
+        <div class="col-md-4"><div class="pref-card" data-type="budget" data-value="budget">💵 Budget-Friendly</div></div>
+        <div class="col-md-4"><div class="pref-card" data-type="budget" data-value="medium">💳 Moderate</div></div>
+        <div class="col-md-4"><div class="pref-card" data-type="budget" data-value="luxury">💎 Luxury</div></div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5">
+      <button id="planBtn" class="btn btn-lg btn-custom">Plan My Day</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

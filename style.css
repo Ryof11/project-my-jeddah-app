@@ -1,0 +1,129 @@
+/* ===== إعدادات عامة ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== الهيدر / البانر ===== */
+.hero {
+  background: linear-gradient(rgba(66,165,245,0.6), rgba(0,201,255,0.6)),
+              url('img/hero-bg.jpg') center/cover no-repeat;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.hero p {
+  color: #e0e0e0;
+  font-size: 1.2rem;
+}
+
+/* ===== الأزرار ===== */
+.btn-custom {
+  background: linear-gradient(90deg, #42a5f5 0%, #00c9ff 100%);
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn-custom:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* ===== كروت خطوات الصفحة الرئيسية ===== */
+.step-card {
+  background: #ffffff;
+  border-radius: 12px;
+  transition: 0.3s;
+  color: #333;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.step-card h3 {
+  font-size: 2rem;
+  color: #42a5f5;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* ===== كروت التفضيلات ===== */
+.pref-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px 10px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #333;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.pref-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.pref-card.selected {
+  background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+  color: #333;
+  font-weight: bold;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* ===== كروت النتائج ===== */
+.card {
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s;
+  color: #333;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ===== Modal ===== */
+.modal-content {
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.modal-body img {
+  border-radius: 10px;
+}
+
+/* ===== الفوتر ===== */
+footer {
+  background: #f1f1f1;
+  color: #666;
+  padding: 10px 0;
+  text-align: center;
+}
